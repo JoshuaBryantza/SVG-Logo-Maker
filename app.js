@@ -32,9 +32,9 @@ function init() {
     .then((blah) => createImage(blah))
     .catch((error) => {
       if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
+       
       } else {
-        // Something else went wrong
+       
       }
     });
 }
@@ -66,10 +66,3 @@ function createImage(data) {
   );
 }
 
-//Make an if statement that inserts the users shape input, this if statment should insert the correct code snippet for the shape picked  by the user
-
-// if (data.shapePick == "Circle") {
-//   svgXml += `<circle cx="150" cy="100" r="80" fill="${data.shapeColor}" />`;
-// } else if (data.shapePick == "Triangle") {
-//   svgXml += `<polygon points="150, 18 244, 182 56, 182" fill="${data.shapeColor}" />`;
-// }
